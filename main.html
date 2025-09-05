@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Fresh Delivery</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;900&amp;family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #20DF6C;
+      --secondary-color: #A3EBB1;
+      --background-color: #F8F9FA;
+      --text-primary: #1E293B;
+      --text-secondary: #64748B;
+      --accent-color: #F1F5F9;
+      --surface-color: #FFFFFF;
+      --on-surface-variant: #94A3B8;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-primary);
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Epilogue', sans-serif;
+    }
+    .type-title-lg {
+      font-family: 'Epilogue', sans-serif;
+      font-size: 2rem;line-height: 2.5rem;font-weight: 700;
+    }
+    .type-title-md {
+      font-family: 'Epilogue', sans-serif;
+      font-size: 1.5rem;line-height: 2rem;font-weight: 700;
+    }
+    .type-title-sm {
+      font-size: 1.25rem;line-height: 1.75rem;font-weight: 600;
+    }
+    .type-body-lg {
+      font-size: 1rem;line-height: 1.5rem;}
+    .type-body-md {
+      font-size: 0.875rem;line-height: 1.25rem;}
+    .type-body-sm {
+      font-size: 0.75rem;line-height: 1rem;}
+    .type-label-lg {
+      font-size: 0.875rem;line-height: 1.25rem;font-weight: 600;
+    }
+    .type-label-md {
+      font-size: 0.75rem;line-height: 1rem;font-weight: 500;
+    }
+    .elevation-1 {
+      box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    }
+    .elevation-2 {
+      box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    }
+    .elevation-3 {
+       box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    }
+    </style>
+<style>
+        .carousel-container::-webkit-scrollbar {
+            display: none;
+        }
+        .carousel-container {
+            -ms-overflow-style: none;scrollbar-width: none;}
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="text-[var(--text-primary)]">
+<div class="relative flex size-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden">
+<div class="flex-grow">
+<header class="bg-white p-4 sticky top-0 z-20 elevation-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-3xl text-[var(--primary-color)]">local_shipping</span>
+<div>
+<p class="type-body-sm text-[var(--text-secondary)]">Deliver to</p>
+<h1 class="type-label-lg text-[var(--text-primary)] flex items-center gap-1">
+                            123 Main Street
+                            <span class="material-symbols-outlined text-lg">expand_more</span>
+</h1>
+</div>
+</div>
+<button class="relative">
+<span class="material-symbols-outlined text-3xl text-[var(--text-secondary)]">shopping_cart</span>
+<span class="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-[var(--primary-color)] text-xs font-bold text-white">3</span>
+</button>
+</div>
+<div class="mt-4">
+<label class="flex items-center w-full h-14 rounded-xl bg-[var(--surface-color)] border-2 border-slate-200 px-4">
+<span class="material-symbols-outlined text-[var(--on-surface-variant)] mr-2">search</span>
+<input class="form-input flex-1 bg-transparent border-none focus:ring-0 placeholder:text-[var(--on-surface-variant)] type-body-md" placeholder="Search fruits, milk, rice…" type="text"/>
+<span class="material-symbols-outlined text-[var(--on-surface-variant)] ml-2">mic</span>
+</label>
+</div>
+</header>
+<main class="space-y-6 py-4">
+<div class="px-4 space-y-6 animate-pulse">
+<div class="h-8 bg-gray-200 rounded-md w-3/4"></div>
+<div class="flex space-x-4">
+<div class="space-y-2">
+<div class="w-36 h-36 bg-gray-200 rounded-lg"></div>
+<div class="h-4 bg-gray-200 rounded w-32"></div>
+<div class="h-4 bg-gray-200 rounded w-20"></div>
+</div>
+<div class="space-y-2">
+<div class="w-36 h-36 bg-gray-200 rounded-lg"></div>
+<div class="h-4 bg-gray-200 rounded w-32"></div>
+<div class="h-4 bg-gray-200 rounded w-20"></div>
+</div>
+<div class="space-y-2">
+<div class="w-36 h-36 bg-gray-200 rounded-lg"></div>
+<div class="h-4 bg-gray-200 rounded w-32"></div>
+<div class="h-4 bg-gray-200 rounded w-20"></div>
+</div>
+</div>
+</div>
+<section class="space-y-4">
+<div class="flex justify-between items-center px-4">
+<h2 class="type-title-sm text-[var(--text-primary)]">Recommended For You</h2>
+<a class="type-label-md text-[var(--primary-color)]" href="#">See all</a>
+</div>
+<div class="carousel-container flex overflow-x-auto gap-4 pl-4 pb-2">
+<div class="w-40 flex-shrink-0 space-y-2">
+<div class="relative rounded-lg overflow-hidden bg-white elevation-1">
+<div class="absolute top-2 left-2 bg-[var(--primary-color)] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-md z-10">10% OFF</div>
+<img alt="Avocado" class="w-full h-40 object-cover aspect-square" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD34i16_3u0-f7-1YlRj2_B4_K1y684hL54LwU8qQ73iXn-Q6gH-t5xR6bM9cWjV8lQ0dJ-lR0rV9nI8aY9lX2eT_qI6cM1yW3zG4oB9sJ0fG7hR3aK9lD7jX9wS4nK2tB6oF0eA3dE5wX6iY8Z1qP9tB3sA"/>
+</div>
+<h3 class="type-body-md font-medium text-[var(--text-primary)] truncate">Avocado</h3>
+<div class="flex justify-between items-center">
+<p class="type-label-lg text-[var(--text-primary)]">₹120</p>
+<button class="w-8 h-8 rounded-full bg-[var(--primary-color)] text-white flex items-center justify-center elevation-2">+</button>
+</div>
+</div>
+<div class="w-40 flex-shrink-0 space-y-2">
+<div class="relative rounded-lg overflow-hidden bg-white elevation-1">
+<img alt="Banana" class="w-full h-40 object-cover aspect-square" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB27Q82j9g5tqV5aXq6Z2y9n8p3o7s7m6wI8e5s5wK4oG5fC3vB2aL1nN0kR1dF2gH3jB4aQ5bC8vE7dG6fB2aV3oQ5sC4wR3aF2"/>
+</div>
+<h3 class="type-body-md font-medium text-[var(--text-primary)] truncate">Banana</h3>
+<div class="flex justify-between items-center">
+<p class="type-label-lg text-[var(--text-primary)]">₹40</p>
+<button class="w-8 h-8 rounded-full bg-[var(--primary-color)] text-white flex items-center justify-center elevation-2">+</button>
+</div>
+</div>
+</div>
+</section>
+<section class="space-y-4">
+<div class="flex justify-between items-center px-4">
+<h2 class="type-title-sm text-[var(--text-primary)]">Buy Again</h2>
+<a class="type-label-md text-[var(--primary-color)]" href="#">See all</a>
+</div>
+<div class="carousel-container flex overflow-x-auto gap-4 pl-4 pb-2">
+<div class="w-40 flex-shrink-0 space-y-2">
+<div class="relative rounded-lg overflow-hidden bg-white elevation-1">
+<div class="absolute top-2 left-2 bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-md z-10">BOGO</div>
+<img alt="Milk" class="w-full h-40 object-cover aspect-square" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9L9vVwW0aC9m2jX_t7gR5kH4oZ3dG2cE1fJ6bA8iO9lP7qY6nU5oR4tI3sC2vW1xV0uY9aB8cZ7dF6eG5hJ4kM3nO2lP1qR0"/>
+</div>
+<h3 class="type-body-md font-medium text-[var(--text-primary)] truncate">Whole Milk</h3>
+<div class="flex justify-between items-center">
+<p class="type-label-lg text-[var(--text-primary)]">₹55</p>
+<button class="w-8 h-8 rounded-full bg-[var(--primary-color)] text-white flex items-center justify-center elevation-2">+</button>
+</div>
+</div>
+</div>
+</section>
+<section class="space-y-4">
+<div class="flex justify-between items-center px-4">
+<h2 class="type-title-sm text-[var(--text-primary)]">Recently Viewed</h2>
+<a class="type-label-md text-[var(--primary-color)]" href="#">See all</a>
+</div>
+<div class="carousel-container flex overflow-x-auto gap-4 pl-4 pb-2">
+<div class="w-40 flex-shrink-0 space-y-2">
+<div class="relative rounded-lg overflow-hidden bg-white elevation-1">
+<img alt="Bread" class="w-full h-40 object-cover aspect-square" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD3pL-uXq54r8595Q0QkGq80g-lO-hX8-5g-oF6gE-3w-rK6g-5tQ5o-2l-0k-9j-8l-7n-6m-4p-3q-1s-0a"/>
+</div>
+<h3 class="type-body-md font-medium text-[var(--text-primary)] truncate">Brown Bread</h3>
+<div class="flex justify-between items-center">
+<p class="type-label-lg text-[var(--text-primary)]">₹45</p>
+<button class="w-8 h-8 rounded-full bg-[var(--primary-color)] text-white flex items-center justify-center elevation-2">+</button>
+</div>
+</div>
+</div>
+</section>
+<section class="space-y-4">
+<div class="px-4">
+<div class="flex justify-between items-center">
+<h2 class="type-title-sm text-[var(--text-primary)]">Snacks</h2>
+<a class="type-label-md text-[var(--primary-color)]" href="#">See all</a>
+</div>
+<div class="flex gap-2 mt-2">
+<button class="px-3 py-1.5 text-xs font-medium rounded-full bg-[var(--secondary-color)] text-[var(--primary-color)]">Under ₹99</button>
+<button class="px-3 py-1.5 text-xs font-medium rounded-full bg-gray-200 text-gray-700">BOGO</button>
+</div>
+</div>
+<div class="carousel-container flex overflow-x-auto gap-4 pl-4 pb-2">
+<div class="w-40 flex-shrink-0 space-y-2">
+<div class="relative rounded-lg overflow-hidden bg-white elevation-1">
+<div class="absolute top-2 left-2 bg-[var(--primary-color)] text-white text-[10px] font-bold px-1.5 py-0.5 rounded-md z-10">20% OFF</div>
+<img alt="Chips" class="w-full h-40 object-cover aspect-square" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9R_8K-qJ4mX_o3-sN_7v-5p-9gZ_3j-1kY_6hA-0c-9lB-5f-2a-8c-7v-4w-3u-1t-0s-9r-8q"/>
+</div>
+<h3 class="type-body-md font-medium text-[var(--text-primary)] truncate">Potato Chips</h3>
+<div class="flex justify-between items-center">
+<p class="type-label-lg text-[var(--text-primary)]">₹30</p>
+<button class="w-8 h-8 rounded-full bg-[var(--primary-color)] text-white flex items-center justify-center elevation-2">+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+<div class="sticky bottom-0 bg-white shadow-[0_-2px_10px_rgba(0,0,0,0.08)] rounded-t-2xl">
+<nav class="flex justify-around items-center h-20 px-4">
+<a class="flex flex-col items-center gap-1 text-[var(--primary-color)]" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">home</span>
+<p class="type-label-md font-bold">Home</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-[var(--text-secondary)]" href="#">
+<span class="material-symbols-outlined">search</span>
+<p class="type-label-md">Explore</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-[var(--text-secondary)]" href="#">
+<span class="material-symbols-outlined">receipt_long</span>
+<p class="type-label-md">Orders</p>
+</a>
+<a class="flex flex-col items-center gap-1 text-[var(--text-secondary)]" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="type-label-md">Profile</p>
+</a>
+</nav>
+</div>
+</div>
+
+</body></html>
